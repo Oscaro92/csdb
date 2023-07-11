@@ -1,13 +1,37 @@
+// * import lib
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// * import css
+import './index.css';
+
+//* import component
+import App from './App';
+import Capoeira from './pages/Capoeira'
+import Contact from './pages/Contact'
+import Event from './pages/Event'
+import Lesson from './pages/Lesson'
+import Graduation from './pages/School/Graduation'
+import Prof from './pages/School/Prof'
+import SDB from './pages/School/SDB'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+        <Routes>
+            <Route path="/" element={<App/>} />
+            <Route path="/capoeira" element={<Capoeira/>} />
+            <Route path="/contact" element={<Contact/>} />
+            <Route path="/event" element={<Event/>} />
+            <Route path="/cours" element={<Lesson/>} />
+            <Route path="/notre-ecole/graduation" element={<Graduation/>} />
+            <Route path="/notre-ecole/prof" element={<Prof/>} />
+            <Route path="/notre-ecole/sdb" element={<SDB/>} />
+        </Routes>
+    </Router>
   </React.StrictMode>
 );
 

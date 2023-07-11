@@ -6,8 +6,8 @@ import logo from '../img/logo.png'
 
 const Header = () => {
     return (
-        <header>
-            <Navbar className="bg-body-tertiary m-auto">
+        <header style={{backgroundColor: '#5EC198', padding: "10px"}}>
+            <Navbar>
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
@@ -17,18 +17,18 @@ const Header = () => {
                             height="30"
                             className="d-inline-block align-top"
                         />
-                          Capoeira Sul Da Bahia
+                        Capoeira Sul Da Bahia
                     </Navbar.Brand>
-                    <Nav.Link href="#home">Accueil</Nav.Link>
-                    <Nav.Link href="#home">Evénement</Nav.Link>
-                    <Nav.Link href="#home">Cours</Nav.Link>
-                    <Nav.Link href="#home">Capoeira</Nav.Link>
+                    <Nav.Link href="/">Accueil</Nav.Link>
+                    <Nav.Link href="/event">Evénement</Nav.Link>
+                    <Nav.Link href="/cours">Cours</Nav.Link>
+                    <Nav.Link href="/capoeira">Capoeira</Nav.Link>
                     <NavDropdown title="Notre école" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Sul Da Bahia</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Les professeurs</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Graduation</NavDropdown.Item>
+                        <NavDropdown.Item href="/notre-ecole/sdb">Sul Da Bahia</NavDropdown.Item>
+                        <NavDropdown.Item href="/notre-ecole/prof">Les professeurs</NavDropdown.Item>
+                        <NavDropdown.Item href="/notre-ecole/graduation">Graduation</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#home">Contact</Nav.Link>
+                    <Nav.Link href="/contact">Contact</Nav.Link>
                 </Container>
             </Navbar>
         </header>
