@@ -9,13 +9,13 @@ const Header = () => {
         <header style={{backgroundColor: '#5EC198', padding: "10px"}}>
             <Navbar>
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img
                             alt=""
                             src={logo}
                             width="30"
                             height="30"
-                            className="d-inline-block align-top"
+                            className="d-inline-block align-top me-3"
                         />
                         Capoeira Sul Da Bahia
                     </Navbar.Brand>

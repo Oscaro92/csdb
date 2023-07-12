@@ -6,6 +6,7 @@ import {Container, Row, Col, Nav, Navbar} from 'react-bootstrap'
 import logo from "../img/logo.png";
 import mail from "../img/mail.svg";
 import pin from  "../img/pin.svg";
+import fb from "../img/icon-fb.png";
 
 const Footer = () => {
     return (
@@ -13,13 +14,13 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col>
-                        <Navbar.Brand href="#home">
+                        <Navbar.Brand href="/">
                             <img
                                 alt=""
                                 src={logo}
                                 width="100"
                                 height="100"
-                                className="d-inline-block align-top"
+                                className="d-inline-block align-top mb-3"
                             />
                             <p>Capoeira Sul Da Bahia - Suresnes</p>
                         </Navbar.Brand>
@@ -27,25 +28,25 @@ const Footer = () => {
                     </Col>
                     <Col>
                         <h3 style={{marginBottom: "20px"}}>Pages</h3>
-                        <Nav.Link href="/">Accueil</Nav.Link>
-                        <Nav.Link href="/event">Evénement</Nav.Link>
-                        <Nav.Link href="/cours">Cours</Nav.Link>
-                        <Nav.Link href="/capoeira">Capoeira</Nav.Link>
-                        <Nav.Link href="/notre-ecole/sdb">Notre école</Nav.Link>
+                        <Nav.Link href="/" className="pt-1">Accueil</Nav.Link>
+                        <Nav.Link href="/event" className="pt-1">Evénement</Nav.Link>
+                        <Nav.Link href="/cours" className="pt-1">Cours</Nav.Link>
+                        <Nav.Link href="/capoeira" className="pt-1">Capoeira</Nav.Link>
+                        <Nav.Link href="/notre-ecole/sdb" className="pt-1">Notre école</Nav.Link>
                     </Col>
                     <Col>
                         <h3 style={{marginBottom: "20px"}}>Contact</h3>
-                        <img alt="mail" src={mail} width="20" height="20" /> email : test@test.com
+                        <a href="mailto:nossacasa.asso@gmail.com" className="text-decoration-none text-black"><img alt="mail" src={mail} width="20" height="20" />  nossacasa.asso@gmail.com</a>
                         <br/>
-                        <img alt="pin" src={pin} width="20" height="20" /> adresse : 6 rue du test@test.com
+                        <img alt="pin" src={pin} width="20" height="20" /> 6 rue du test, à Test, France
                         <br/>
                         <br/>
-                        Réseaux
+                        <a href="https://www.facebook.com/associationnossacasa" target="_blank" ><img alt="fb" src={fb} width="30" height="30" /></a>
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
-                        Make by <a href="https://pigallestud.io"> Le Studio Pigalle </a>
+                    <Col className="pt-3">
+                        Make by <a href="https://pigallestud.io" target="_blank" className="text-decoration-none text-black"> Le Studio Pigalle </a>
                     </Col>
                 </Row>
             </Container>

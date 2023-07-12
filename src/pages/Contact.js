@@ -4,13 +4,19 @@ import React from "react";
 // * import component
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import {Container, Row, Col} from "react-bootstrap";
 
 const Contact = () => {
     return (
-
-        <div>
+        <div className="App">
             <Header></Header>
-            <h1>Contact</h1>
+                <Container className="p-5">
+                    <Row className="p-5">
+                        <Col className="p-5">
+                            <h1>Contact</h1>
+                        </Col>
+                    </Row>
+                </Container>
             <Footer></Footer>
         </div>
     );

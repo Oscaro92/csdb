@@ -6,25 +6,38 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import {Col, Container, Row} from "react-bootstrap";
 
-// * import image
-import graduation1 from '../../img/graduation_adulte.jpg'
-import graduation2 from '../../img/graduation_enfant.jpg'
+// * import obj
+import {child_rope, adult_rope} from './function'
+import logo from "../../img/logo.png";
+
 
 const Graduation = () => {
     return (
-        <div>
+        <div className="App">
             <Header></Header>
             <Container className="p-5">
-                <Col>
-                    <Row className="p-5">
-                        <h1>Graduation Adulte</h1>
-                        <img src={graduation1}/>
-                    </Row>
-                    <Row className="p-5">
-                        <h1>Graduation Enfant</h1>
-                        <img src={graduation2}/>
-                    </Row>
-                </Col>
+                <Row className="p-5">
+                    <Col>
+                        <h1 className="pb-1">Système de graduation adulte</h1>
+                        <h3 className="pb-5">Capoeira Sul Da Bahia Mestre Railson</h3>
+                        {adult_rope.map((data) => (
+                            <div className="p-1">
+                                <img src={data.image} width="400" height="50" />
+                                <p>{data.name}</p>
+                            </div>
+                        ))}
+                    </Col>
+                    <Col>
+                        <h1 className="pb-1">Système de graduation enfant</h1>
+                        <h3 className="pb-5">Capoeira Sul Da Bahia Mestre Railson</h3>
+                        {child_rope.map((data) => (
+                            <div className="p-1">
+                                <img src={data.image} width="400" height="50"  />
+                                <p>{data.name}</p>
+                            </div>
+                        ))}
+                    </Col>
+                </Row>
             </Container>
             <Footer></Footer>
         </div>
