@@ -32,7 +32,7 @@ import adult17 from '../../img/corde_adulte/corde_adulte_17.png'
 import image from "../../img/DSC_6205.jpg"
 import image1 from "../../img/DSC_6111.jpg"
 import image2 from "../../img/DSC_6107.jpg"
-
+import image3 from "../../img/DSC_6349.jpg"
 
 // * build object
 let profs = [
@@ -49,10 +49,16 @@ let profs = [
         corde: adult11
     },
     {
-        name: 'Sorizo',
+        name: 'Sorriso',
         picture: image2,
-        description: "David ou Sorizo (sourir) fait de la capoeira depuis plus de X ans",
+        description: "David ou Sorriso (sourir) fait de la capoeira depuis plus de X ans",
         corde: adult11
+    },
+    {
+        name: 'Brutal',
+        picture: image3,
+        description: "Julien ou brutal (la brute) capoeiriste doux comme un agneau",
+        corde: adult8
     }
 ]
 

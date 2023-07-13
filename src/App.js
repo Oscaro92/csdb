@@ -1,7 +1,7 @@
 // * import lib
 import React from "react";
 import {Container, Row, Col} from 'react-bootstrap'
-
+import {Parallax, Background} from 'react-parallax'
 
 // * import css
 import './App.css';
@@ -21,7 +21,7 @@ const App = () => {
     return (
         <div className="App">
             <Header></Header>
-            <div style={{backgroundImage: `url(${image1})`}} className="img-fluid">
+            <div style={{backgroundImage: `url(${image1})`, "background-position": "center"}} className="img">
                 <Container className="p-5">
                     <Row className="p-5">
                         <Col className="p-5">
@@ -47,7 +47,7 @@ const App = () => {
                 </Row>
             </Container>
             <div className="p-5"></div>
-            <div style={{backgroundImage: `url(${image4})`}} className="img-fluid p-5">
+            <Parallax bgImage={image4} strength={750}>
                 <Container className="p-5">
                     <Row>
                         <Col>
@@ -68,7 +68,7 @@ const App = () => {
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </Parallax>
             <div className="p-5"></div>
             <Container className="p-5">
                 <Row>
