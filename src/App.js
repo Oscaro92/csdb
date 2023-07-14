@@ -1,6 +1,6 @@
 // * import lib
 import React from "react";
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Image} from 'react-bootstrap'
 import {Parallax, Background} from 'react-parallax'
 
 // * import css
@@ -12,6 +12,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 // * import image
+import test from "./img/test.jpg"
 import image1 from "./img/DSC_6166.jpg"
 import image2 from "./img/DSC_6360.jpg"
 import image3 from "./img/DSC_6301.jpg"
@@ -21,22 +22,20 @@ const App = () => {
     return (
         <div className="App">
             <Header></Header>
-            <div style={{backgroundImage: `url(${image1})`, "background-position": "center"}} className="img">
+            <div style={{backgroundImage: `url(${test})`, "background-position": "center"}} className="img-fluid" >
                 <Container className="p-5">
                     <Row className="p-5">
                         <Col className="p-5">
                             <h1 className="p-5">Capoeira Sul Da Bahia - Suresnes</h1>
-                            <p className="p-2">Top c'est super la capoeira on s'amuse trop ! Venez en faire avec nous
-                                quoi ! </p>
+                            <p className="p-2">Top c'est super la capoeira on s'amuse trop ! Venez en faire avec nous quoi ! </p>
                         </Col>
                         <Col>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <div className="p-5"></div>
             <Container className="p-5">
-                <Row>
+                <Row  className="p-5">
                     <Col>
                         <img src={image2} width="402" height="604"/>
                     </Col>
@@ -46,10 +45,9 @@ const App = () => {
                     </Col>
                 </Row>
             </Container>
-            <div className="p-5"></div>
             <Parallax bgImage={image4} strength={750}>
                 <Container className="p-5">
-                    <Row>
+                    <Row className="p-5">
                         <Col>
                             <h1>2</h1>
                             <p>professeurs</p>
@@ -69,9 +67,8 @@ const App = () => {
                     </Row>
                 </Container>
             </Parallax>
-            <div className="p-5"></div>
             <Container className="p-5">
-                <Row>
+                <Row className="p-5">
                     <Col>
                         <h1>Les cours</h1>
                         <p>PLein de cours différents </p>
