@@ -31,10 +31,10 @@ const Footer = () => {
                     <Col>
                         <h3 className="mb-4">Pages</h3>
                         <Nav.Link href="/" className="pt-1">Accueil</Nav.Link>
-                        <Nav.Link href="/event" className="pt-1">Evénement</Nav.Link>
-                        <Nav.Link href="/cours" className="pt-1">Cours</Nav.Link>
-                        <Nav.Link href="/capoeira" className="pt-1">Capoeira</Nav.Link>
-                        <Nav.Link href="/notre-ecole/sdb" className="pt-1">Notre école</Nav.Link>
+                        <Nav.Link href="/event" className="pt-2">Evénement</Nav.Link>
+                        <Nav.Link href="/cours" className="pt-2">Cours</Nav.Link>
+                        <Nav.Link href="/capoeira" className="pt-2">Capoeira</Nav.Link>
+                        <Nav.Link href="/notre-ecole/sdb" className="pt-2">Notre école</Nav.Link>
                     </Col>
                     <Col>
                         <h3 className="mb-4">Contact</h3>

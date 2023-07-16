@@ -5,13 +5,13 @@ import React from "react";
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import {Col, Container, Row} from "react-bootstrap";
-import image from "../../img/bg.jpg";
+import bg from "../../img/bg_sdb.jpg";
 
 const SDB = () => {
     return (
         <div className="App">
             <Header></Header>
-                <div style={{backgroundImage: `url(${image})`, "background-position": "center"}} className="img-fluid p-5">
+                <div style={{backgroundImage: `url(${bg})`, "background-position": "center"}} className="img-fluid p-5">
                     <Container className="p-5">
                         <Row className="p-5">
                             <Col className="p-5">

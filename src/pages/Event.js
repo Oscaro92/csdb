@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import {Card, Col, Container, Row} from "react-bootstrap";
 
 // * import image
-import bg1 from "../img/IMG_1592.JPG";
+import bg from "../img/bg_event.JPG";
 import event1 from "../img/event1.jpg";
 import event2 from "../img/event2.jpg";
 import event3 from "../img/event3.jpg";
@@ -82,11 +82,21 @@ const events = [
     }
 ]
 
+// * css
+const style_image = {
+    backgroundImage: `url(${bg})`,
+    height: "100%",
+    "background-repeat": "no-repeat",
+    "background-position": "center",
+    "background-size": "cover"
+}
+
+
 const Event = () => {
     return (
         <div className="App">
             <Header></Header>
-                <div style={{backgroundImage: `url(${bg1})`, "background-position": "center"}} className="img-fluid">
+                <div style={style_image} className="p-5">
                     <Container className="p-5">
                         <Row className="p-5">
                             <Col className="p-5">

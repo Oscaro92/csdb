@@ -28,7 +28,6 @@ const Header = () => {
                         <NavDropdown.Item href="/notre-ecole/prof">Les professeurs</NavDropdown.Item>
                         <NavDropdown.Item href="/notre-ecole/graduation">Graduation</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
                 </Container>
             </Navbar>
         </header>

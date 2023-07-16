@@ -10,7 +10,6 @@ import './index.css';
 //* import component
 import App from './App';
 import Capoeira from './pages/Capoeira'
-import Contact from './pages/Contact'
 import Event from './pages/Event'
 import Lesson from './pages/Lesson'
 import Graduation from './pages/School/Graduation'
@@ -24,7 +23,6 @@ root.render(
         <Routes>
             <Route path="/" element={<App/>} />
             <Route path="/capoeira" element={<Capoeira/>} />
-            <Route path="/contact" element={<Contact/>} />
             <Route path="/event" element={<Event/>} />
             <Route path="/cours" element={<Lesson/>} />
             <Route path="/notre-ecole/graduation" element={<Graduation/>} />
