@@ -105,7 +105,7 @@ const Capoeira = () => {
                         <p>En 1953, la capoeira est reconnue officiellement par le président Gétulio Vargas qui la déclare "unique sport véritablement national". La capoeira n'est plus interdite. Cependant, Mestre Bimba malgré son travail, connait des problèmes financiers. Il part pour Goiânia en 1973 en quête de plus de reconnaissance et d'une vie meilleur. Il meurt l'année suivante le 5 février 1974. Enterré à Goiânia ses restes mortuaires furent ramené à Salvador, sa ville, le 20 juillet 1978 dans le cimetière de Campo Santo.</p>
                     </Row>
                     <Row className="py-5 text-start fs-5">
-                        <h2 className="display-5 pb-3">Mestre Bimba (1900 - 1974)</h2>
+                        <h2 className="display-5 pb-3">Mestre Pastinha (1889 - 1981)</h2>
                         <Col sm={4}>
                             <Image src={pastinha}/>
                         </Col>
