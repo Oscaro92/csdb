@@ -4,10 +4,11 @@ import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 //* import image
 import logo from '../img/logo.png'
 
+
 const Header = () => {
     return (
-        <header style={{backgroundColor: '#5EC198', padding: "10px"}}>
-            <Navbar>
+        <header style={{backgroundColor: '#5EC198'}} className="p-2">
+            <Navbar key="sm" expand="sm">
                 <Container>
                     <Navbar.Brand href="/">
                         <img

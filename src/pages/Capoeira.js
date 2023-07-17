@@ -37,16 +37,10 @@ const Capoeira = () => {
                     </Container>
                 </div>
                 <Container className="py-5">
-                    <Row className="pt-5">
-                        <h1 className="display-5 fw-bold">"Petite" histoire de la Capoeira </h1>
-                        <Col sm={4} className="pt-5 text-start fs-5">
-                            <p>En 1500, Pedro Alvares Cabral découvre le Brésil. Il débarque dans un petit port naturel, qu’il baptisa Porto Seguro (port sûre), dans l’actuel état de Bahia. Au nom de la couronne portugaise, il prend possession de la Terra de Santa Cruz (Terre de la Sainte Croix), le nom Brésil n’étant apparu plus tard lors de la colonisation du pays par les portugais.</p>
-                        </Col>
-                        <Col sm={8} className="pt-5">
-                            <Image src={image1} height="75%"/>
-                        </Col>
-                    </Row>
                     <Row className="text-start fs-5">
+                        <h1 className="display-5 fw-bold text-center py-5">"Petite" histoire de la Capoeira </h1>
+                        <p>En 1500, Pedro Alvares Cabral découvre le Brésil. Il débarque dans un petit port naturel, qu’il baptisa Porto Seguro (port sûre), dans l’actuel état de Bahia. Au nom de la couronne portugaise, il prend possession de la Terra de Santa Cruz (Terre de la Sainte Croix), le nom Brésil n’étant apparu plus tard lors de la colonisation du pays par les portugais.</p>
+                        <Image src={image1} className="py-3" fluid/>
                         <p>Les activités économiques de la grande colonie, fondées essentiellement sur l’agriculture – exploitation du bois-Brésil, plantations de canne à sucre, de coton, et plus tard de tabac et café – sont de grandes consommatrices de main d’œuvre. Les esclaves africains furent envoyés au Brésil, dans les plantations, nourrir une machine économique que la population indigène, migrante, occupée à des guerres tribales, victime des épidémies apportées par les colons, ou au service des intérêts jésuites, ne pouvait faire tourner.</p>
                         <p>Le document le plus ancien relatif à l’importation d’esclaves au Brésil date du 29 mars 1559. Signé par le roi Dom João III, il autorise que soient déportés des hommes depuis l’île de São Tomé et la Guinée qui, à cette époque, s’étend du Sénégal au Congo.</p>
                         <p>Enfin, En 1890, à peine plus d’un an après l’abolition de l’esclavage, Rui Barbosa, Ministre des Finances (Fazenda), décide de détruire toutes les archives qui se rapportent à l’esclavage. Officiellement, le but de cette opération, malheureuse pour les historiens, était de tirer un trait sur cette histoire infâmante, de donner à la nation brésilienne un nouveau départ, fondé sur la liberté et l’oubli de l’esclavagisme. Elle anéantissait, du même coup, les prétentions des propriétaires « spoliés » par l’abolition, à une quelconque indemnité.</p>
@@ -73,12 +67,12 @@ const Capoeira = () => {
                             <p> Johann Mauritz Rugendas, peintre-voyageur autrichien, tiré de Voyage pittoresque au Brésil, paru en 1835.</p>
                         </Col>
                         <Col>
-                            <Image src={image2}/>
+                            <Image src={image2} fluid/>
                         </Col>
                     </Row>
                     <Row className="py-5 text-start fs-5">
                         <Col>
-                            <Image src={image3}/>
+                            <Image src={image3} fluid/>
                         </Col>
                         <Col>
                             <p className="fst-italic">« Le samedi soir après le dernier travail de la semaine, et les jours de fête qui donnent chômage et repos, les noirs ont une heure ou deux de veillée pour les danses. Ils seréunissent en leur terreiro s'appellent, se groupent, s'agacent et les marches s'ouvrent. Ici c'est la capoeira, espèce de danse Pyrrhique, aux évolutions hardies de combat, que règle le tambour du Congo ; là c'est le Batuque, poses froides ou lascives qu'accélèrent ou contient l'Urucungo viole (autre nom du Berimbau) à cordes maigres ; plus loin c'est une danse folle où le regard, les seins et les hanches provoquent, c'est une espèce de convulsion enivrée qu'on appelle le Lundú. ».</p>
@@ -99,7 +93,7 @@ const Capoeira = () => {
                             <p>Manoel dos Reis Machado nait le 23 novembre 1900 à Salvador de Bahia. Sont surnom "Bimba" qui signifie "zizi" est le résultat d'un pari entre sa mère et la sage-femme, sa mère pensait que ce serait une fille et la sage-femme un garçon. A l'accouchement, la mère demanda qui avait gagné le pari et la sage-femme lui répondit "C'est un bimba, Madame Martinha". Fils de Luis Cândido Machado, champio de Batuque (danse et lutte régionale), il aurait été initié des 1912 à la capoeira par Bentinho un capitaine de la Compagnie de Navigation Bahianaise. Par la suite il donna des cours pendant 10 ans avant de crée en 1932 sa première Académie. A l'époque la capoeira est toujours frappée d'illégalité. La capoeira est interdite dans les lieux publics, en revanche la loi n'interdit pas qu'elle soit pratiquée dans un espace privé. Mestre Bimba sort la capoeira de la rue et la développe dans son Académie et n'est donc pas inquieté par la justice.</p>
                         </Col>
                         <Col sm={4}>
-                            <Image src={bimba}/>
+                            <Image src={bimba} fluid/>
                         </Col>
                         <p>L'apport de Mestre Bimba à la capoeira est énorme. Il lui donne une nouvelle image et contribue à la rendre populaire en faisaint des démonstrations avec ses élèves. Il la révoutionne totalement en créant ce qui deviendra le style appelé "Regional". En effet, Mestre Bimba trouve que la capoeira n'est pas assez efficace. Il décide donc de la mixer avec le Batuque. Il s'inspire également d'autres art martiaux asiatiques,  mais également de  la savate. Des arts martiaux asiatiques il apportera le système des cordes pour marquer la graduation. Il sort la capoeira du sol et la rend aérienne. Il place la ginga comme base de la capoeira et introduit le berimbau comme instrument roi de la capoeira (souvenons nous que son usage n'était pas systématique cf. ci-dessus). Il crée, également, une méthode d'enseignement complète comprenant des techniques appelé sequência (séquence). En modifiant la perception sulfureuse dont souffrait la capoeira il parvient à en faire un sport à part entière et ainsi à toucher toutes les couches de la société.</p>
                         <p>En 1953, la capoeira est reconnue officiellement par le président Gétulio Vargas qui la déclare "unique sport véritablement national". La capoeira n'est plus interdite. Cependant, Mestre Bimba malgré son travail, connait des problèmes financiers. Il part pour Goiânia en 1973 en quête de plus de reconnaissance et d'une vie meilleur. Il meurt l'année suivante le 5 février 1974. Enterré à Goiânia ses restes mortuaires furent ramené à Salvador, sa ville, le 20 juillet 1978 dans le cimetière de Campo Santo.</p>
@@ -107,7 +101,7 @@ const Capoeira = () => {
                     <Row className="py-5 text-start fs-5">
                         <h2 className="display-5 pb-3">Mestre Pastinha (1889 - 1981)</h2>
                         <Col sm={4}>
-                            <Image src={pastinha}/>
+                            <Image src={pastinha} fluid/>
                         </Col>
                         <Col sm={8}>
                             <p>Vincente Ferreira Pastinha nait à Salvador le 5 avril 1889. Il commence la capoeira à l'age de 10 ans avec un noir du nom de benedito, un ancien esclave. En 1935, fort du succès de la première académie de capoeira de Mestre Bimba, Mestre Pastinha ouvre son académie appelée : "Centre sportif de Capoeira Angola". Mestre Pastinha, pense que Mestre Bimba a trop changer la capoeira et qu'il faut la préserver dans son état "originel". Son travail connait à son tour un renommée nationale et internationale. Il est représente le Brésil au 1° festival des arts noirs à Dakar en 1966. Cependant, à la fin de sa vie il connait des problèmes semblables à ceux de Mestre Bimba. En effet, son académie est saisie par "Fondation du Patrimoine" et est transformé en restaurant administratif. Mestre Pastinha décèdera le 13 novembre 1981 à la suite d'un arrêt cardiaque, pauvre, malgré l'apport incroyable qu'il a fourni au Brésil et à la culture afro-brésilienne. </p>

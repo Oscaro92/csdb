@@ -15,8 +15,8 @@ const Graduation = () => {
     return (
         <div className="App">
             <Header></Header>
-            <Container className="p-5">
-                <Row className="p-5">
+            <Container className="py-5">
+                <Row className="py-5">
                     <Col>
                         <h1 className="pb-1">Système de graduation adulte</h1>
                         <h3 className="pb-5">Capoeira Sul Da Bahia Mestre Railson</h3>

@@ -184,8 +184,46 @@ const adult_rope = [
     }
 ]
 
+
+const markers_sa = [
+    { markerOffset: -30, name: "Arrail d'Ajuda & Porto Seguro", coordinates: [-39.0929, -16.48705]},
+    { markerOffset: 15, name: "São Paulo", coordinates: [-46.9249, -23.681] },
+    { markerOffset: 15, name: "Minas Gerais", coordinates: [-48.09325, -15.7215] },
+    { markerOffset: 15, name: "Santiago", coordinates: [-70.9416, -33.4721] },
+    { markerOffset: -30, name: "Valparaíso & Vina del Mar", coordinates: [-71.5906, -33.0452] },
+    { markerOffset: 15, name: "Temuco", coordinates: [-72.6439, -38.7290] },
+    { markerOffset: -35, name: "Lima", coordinates: [-77.1525, -12.0262] },
+    { markerOffset: -30, name: "Cusco", coordinates: [-71.9804, -13.5299] },
+    { markerOffset: 15, name: "Arequipa", coordinates: [-71.5596, -16.4040] },
+    { markerOffset: -30, name: "Puno", coordinates: [-70.0575, -15.8467] }
+];
+
+const markers_na = [
+    { markerOffset: 15, name: "Santa Barbara", coordinates: [-119.7910, 34.3986] },
+    { markerOffset: -30, name: "San Francisco", coordinates: [-122.4787, 37.7577] },
+    { markerOffset: 15, name: "Washington", coordinates: [-77.0969, 38.8938] },
+    { markerOffset: 15, name: "Québec", coordinates: [-71.5097, 46.8572] }
+];
+
+const markers_europe = [
+    { markerOffset: 10, name: "Paris", coordinates: [2.2646, 48.8589] },
+    { markerOffset: 5, name: "Boulogne s/ Mer", coordinates: [1.5855, 50.7303] },
+    { markerOffset: -25, name: "Vienne", coordinates: [16.0682, 48.2204] },
+    { markerOffset: 15, name: "San Miniato", coordinates: [10.8434, 43.6831] },
+    { markerOffset: 10, name: "Milan", coordinates: [9.0953, 45.4628] },
+    { markerOffset: -25, name: "Bolzano", coordinates: [11.3265, 46.4892] },
+    { markerOffset: -25, name: "Amsterdam", coordinates: [4.8215, 52.3547] },
+    { markerOffset: -25, name: "Lille", coordinates: [3.0056, 50.6311] },
+    { markerOffset: 10, name: "Braga", coordinates: [-8.4526, 41.5473] },
+    { markerOffset: 5, name: "Londres", coordinates: [-0.2664, 51.5287] },
+    { markerOffset: 10, name: "Seville", coordinates: [-5.9962, 37.3754] }
+];
+
 export {
     profs,
     child_rope,
-    adult_rope
+    adult_rope,
+    markers_sa,
+    markers_na,
+    markers_europe
 }

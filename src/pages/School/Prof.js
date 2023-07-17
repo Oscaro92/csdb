@@ -13,11 +13,11 @@ const Prof = () => {
     return (
         <div className="App">
             <Header></Header>
-                <Container className="p-5">
-                    <Row className="p-5">
+                <Container className="py-5">
+                    <Row className="py-5">
                         <h1> Nos professeurs </h1>
                         {profs.map((data) => (
-                            <Col className="p-5">
+                            <Col className="py-5">
                                 <Card
                                     key={data.name}
                                     style={{ width: '18rem' }}
