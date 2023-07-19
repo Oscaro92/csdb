@@ -1,6 +1,6 @@
 // * import lib
 import React from "react";
-import {Col, Container, Row, Table, Carousel} from "react-bootstrap";
+import {Col, Container, Row, Table, Carousel, Card} from "react-bootstrap";
 
 // * import component
 import Header from '../components/Header'
@@ -9,6 +9,11 @@ import Footer from '../components/Footer'
 // * import image
 import bg from "../img/bg_lesson.jpg"
 import profs from "../img/profs.jpg"
+import salle1 from "../img/salle_belvedere.jpg"
+import salle2 from "../img/salle_beltrame.jpg"
+import salle3 from "../img/salle_raguidelles.jpg"
+import salle4 from "../img/salle_gambetta.jpg"
+import salle5 from "../img/salle_cogedim.jpg"
 
 // * css
 const style_image = {
@@ -18,6 +23,41 @@ const style_image = {
     "background-position": "center",
     "background-size": "cover"
 }
+
+const halls = [
+    {
+        name: "Gymnase du Belvédère",
+        address: "65Bis Rue Gambetta 92150 SURESNES",
+        image: salle1,
+        url: "https://goo.gl/maps/TjaEVZtYHQ31c75u8"
+    },
+    {
+        name: "Gymnase Beltrame",
+        address: "Allée Beltrame 92150 SURESNES",
+        image: salle2,
+        url: "https://goo.gl/maps/iPYq7jiopdkkiNLWA"
+    },
+    {
+        name: "Centre sportif des raguidelles",
+        address: "27 Rue Tourneroches 92150 SURESNES",
+        image: salle3,
+        url: "https://goo.gl/maps/GV1shBRG5WRjBxud7"
+    },
+    {
+        name: "Espace Gambetta",
+        address: "27  Rue Gambetta 92150 SURESNES",
+        image: salle4,
+        url: "https://goo.gl/maps/2THUwgHzzZxFmmHX8"
+    },
+    {
+        name: "Cogedim Club",
+        address: "25 Rue Auguste Blanche 92800 PUTEAUX",
+        image: salle5,
+        url: "https://goo.gl/maps/RahkgXcoPoMtZr8Q6"
+    }
+]
+
+
 
 const Lesson = () => {
     return (
@@ -148,43 +188,19 @@ const Lesson = () => {
                         </Row>
                         <Row className="py-5">
                             <Carousel>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="holder.js/800x400?text=First slide&bg=373940"
-                                        alt="First slide"
-                                    />
-                                    <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="holder.js/800x400?text=Second slide&bg=282c34"
-                                        alt="Second slide"
-                                    />
-
-                                    <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="holder.js/800x400?text=Third slide&bg=20232a"
-                                        alt="Third slide"
-                                    />
-
-                                    <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>
-                                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                        </p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
+                                {halls.map((hall) => (
+                                    <Carousel.Item>
+                                        <img
+                                            className="d-block w-100"
+                                            src={hall.image}
+                                            alt="First slide"
+                                        />
+                                        <Carousel.Caption>
+                                            <h3>{hall.name}</h3>
+                                            <a href={hall.url} className="text-reset text-decoration-none" target="_blank"><p>{hall.address}</p></a>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                ))}
                             </Carousel>
                         </Row>
                     </Col>
