@@ -26,7 +26,7 @@ const Header = () => {
                     <Nav.Link href="/capoeira">Capoeira</Nav.Link>
                     <NavDropdown title="Notre école" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/notre-ecole/sdb">Sul Da Bahia</NavDropdown.Item>
-                        <NavDropdown.Item href="/notre-ecole/prof">Les professeurs</NavDropdown.Item>
+                        <NavDropdown.Item href="/notre-ecole/prof">Nos professeurs</NavDropdown.Item>
                         <NavDropdown.Item href="/notre-ecole/graduation">Graduation</NavDropdown.Item>
                     </NavDropdown>
                 </Container>

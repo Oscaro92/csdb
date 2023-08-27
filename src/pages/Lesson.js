@@ -29,34 +29,33 @@ const halls = [
         name: "Gymnase du Belvédère",
         address: "65Bis Rue Gambetta 92150 SURESNES",
         image: salle1,
-        url: "https://goo.gl/maps/TjaEVZtYHQ31c75u8"
+        url: "https://goo.gl/maps/oQda6jmysWSsyU6c6"
     },
     {
         name: "Gymnase Beltrame",
         address: "Allée Beltrame 92150 SURESNES",
         image: salle2,
-        url: "https://goo.gl/maps/iPYq7jiopdkkiNLWA"
+        url: "https://goo.gl/maps/HSzZxKkj7AHsdHcj8"
     },
     {
         name: "Centre sportif des raguidelles",
         address: "27 Rue Tourneroches 92150 SURESNES",
         image: salle3,
-        url: "https://goo.gl/maps/GV1shBRG5WRjBxud7"
+        url: "https://goo.gl/maps/zmJnmpmUVzeHWrNq9"
     },
     {
         name: "Espace Gambetta",
         address: "27  Rue Gambetta 92150 SURESNES",
         image: salle4,
-        url: "https://goo.gl/maps/2THUwgHzzZxFmmHX8"
+        url: "https://goo.gl/maps/7c6Gvd4suVCcm2DJ7"
     },
     {
         name: "Cogedim Club",
         address: "25 Rue Auguste Blanche 92800 PUTEAUX",
         image: salle5,
-        url: "https://goo.gl/maps/RahkgXcoPoMtZr8Q6"
+        url: "https://goo.gl/maps/bpsfoPeDQPuTujSX8"
     }
 ]
-
 
 
 const Lesson = () => {
