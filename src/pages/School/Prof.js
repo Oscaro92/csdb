@@ -26,6 +26,7 @@ const Prof = () => {
             <Header></Header>
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
+
                         <Modal.Title>{profs[keySelect].name}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>{profs[keySelect].description}</Modal.Body>
