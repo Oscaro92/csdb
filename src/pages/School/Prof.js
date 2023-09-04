@@ -8,7 +8,16 @@ import Footer from '../../components/Footer'
 
 // * import object
 import {profs} from './function'
+import bg from "../../img/bg_graduation.jpg";
 
+// * CSS
+const style_image = {
+    backgroundImage: `url(${bg})`,
+    height: "100%",
+    "background-repeat": "no-repeat",
+    "background-position": "center",
+    "background-size": "cover"
+}
 
 const Prof = () => {
     const [show, setShow] = useState(false);
@@ -26,11 +35,21 @@ const Prof = () => {
             <Header></Header>
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
-
                         <Modal.Title>{profs[keySelect].name}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>{profs[keySelect].description}</Modal.Body>
                 </Modal>
+                <div style={style_image} >
+                    <Container className="py-5">
+                        <Container className="py-5">
+                            <Row className="py-5">
+                                <Col className="py-5">
+                                    <h1 className="display-1 fw-bolder py-5" style={{color: '#5EC198'}}>Graduation</h1>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Container>
+                </div>
                 <Container className="py-5">
                     <Row className="py-5">
                         <h1> Nos professeurs </h1>

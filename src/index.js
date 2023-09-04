@@ -7,10 +7,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // * import css
 import './index.css';
 
-//* import component
+//* import page
 import App from './App';
 import Capoeira from './pages/Capoeira'
-import Event from './pages/Event'
 import Lesson from './pages/Lesson'
 import Graduation from './pages/School/Graduation'
 import Prof from './pages/School/Prof'
@@ -23,8 +22,7 @@ root.render(
         <Routes>
             <Route path="/" element={<App/>} />
             <Route path="/capoeira" element={<Capoeira/>} />
-            <Route path="/event" element={<Event/>} />
-            <Route path="/cours" element={<Lesson/>} />
+            <Route path="/cours-events" element={<Lesson/>} />
             <Route path="/notre-ecole/graduation" element={<Graduation/>} />
             <Route path="/notre-ecole/prof" element={<Prof/>} />
             <Route path="/notre-ecole/sdb" element={<SDB/>} />

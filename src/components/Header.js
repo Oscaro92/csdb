@@ -21,8 +21,7 @@ const Header = () => {
                         Capoeira Sul Da Bahia
                     </Navbar.Brand>
                     <Nav.Link href="/">Accueil</Nav.Link>
-                    <Nav.Link href="/event">Evénement</Nav.Link>
-                    <Nav.Link href="/cours">Cours</Nav.Link>
+                    <Nav.Link href="/cours-events">Cours & Événements</Nav.Link>
                     <Nav.Link href="/capoeira">Capoeira</Nav.Link>
                     <NavDropdown title="Notre école" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/notre-ecole/sdb">Sul Da Bahia</NavDropdown.Item>

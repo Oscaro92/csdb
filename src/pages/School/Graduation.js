@@ -8,13 +8,34 @@ import {Col, Container, Row} from "react-bootstrap";
 
 // * import obj
 import {child_rope, adult_rope} from './function'
-import logo from "../../img/logo.png";
 
+// * import img
+import bg from '../../img/bg_graduation.jpg'
+
+// * CSS
+const style_image = {
+    backgroundImage: `url(${bg})`,
+    height: "100%",
+    "background-repeat": "no-repeat",
+    "background-position": "center",
+    "background-size": "cover"
+}
 
 const Graduation = () => {
     return (
         <div className="App">
             <Header></Header>
+            <div style={style_image} >
+                <Container className="py-5">
+                    <Container className="py-5">
+                        <Row className="py-5">
+                            <Col className="py-5">
+                                <h1 className="display-1 fw-bolder py-5" style={{color: '#5EC198'}}>Graduation</h1>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Container>
+            </div>
             <Container className="py-5">
                 <Row className="py-5">
                     <Col>

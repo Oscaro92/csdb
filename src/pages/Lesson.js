@@ -1,10 +1,15 @@
 // * import lib
 import React from "react";
 import {Col, Container, Row, Table, Carousel, Card} from "react-bootstrap";
+import FullCalendar from "@fullcalendar/react";
+import daygridPlugin from "@fullcalendar/daygrid";
+import frLocale from '@fullcalendar/core/locales/fr';
+import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 
 // * import component
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import CAT from '../components/CTA'
 
 // * import image
 import bg from "../img/bg_lesson.jpg"
@@ -66,7 +71,7 @@ const Lesson = () => {
                     <Container className="py-5">
                         <Row className="py-5">
                             <Col className="py-5">
-                                <h1 className="display-1 fw-bolder" style={{color: '#5EC198'}}>Cours</h1>
+                                <h1 className="display-1 fw-bolder" style={{color: '#5EC198'}}>Cours & Événements</h1>
                             </Col>
                         </Row>
                     </Container>
@@ -75,12 +80,44 @@ const Lesson = () => {
                     <Row className="py-5">
                         <Col>
                             <h1>Cours adulte et enfant</h1>
-                            <p>Cours avec Romain et David </p>
+                            <p className="py-3">Cours avec Romain et David </p>
+                            <CAT></CAT>
                         </Col>
                         <Col>
                             <img src={profs} width="65%"/>
                         </Col>
                     </Row>
+                </Container>
+                <Container>
+                    <Col>
+                        <Row>
+                            <FullCalendar
+                                height="auto"
+                                //contentHeight="auto"
+                                initialView='dayGridWeek'
+                                headerToolbar={{
+                                    start: "prev",
+                                    center: "title",
+                                    end: "next"
+                                }}
+                                titleFormat={{ year: 'numeric', month: 'long' }}
+                                locale='fr'
+                                locales={[frLocale]}
+                                themeSystem="bootstrap5"
+                                plugins={[daygridPlugin, bootstrap5Plugin]}
+                                events={[
+                                    { title: 'event 1', date: '2023-09-04' },
+                                    { title: 'event 2', date: '2023-09-09' },
+                                    {
+                                        title: "My repeating event",
+                                        start: '10:00', // a start time (10am in this example)
+                                        end: '14:00', // an end time (2pm in this example)
+                                        dow: [1, 4] // Repeat monday and thursday
+                                    }
+                                ]}
+                            />
+                        </Row>
+                    </Col>
                 </Container>
                 <Container  className="py-5">
                     <Col>
