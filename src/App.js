@@ -14,9 +14,9 @@ import CAT from  './components/CTA'
 
 // * import image
 import bg from "./img/bg_home.jpg"
-import image2 from "./img/DSC_6360.jpg"
-import image3 from "./img/DSC_6301.jpg"
-import image4 from "./img/DSC_6244.jpg"
+import image1 from "./img/image1_home.jpg"
+import image2 from "./img/image2_home.jpg"
+import image3 from "./img/image3_home.jpg"
 
 const style_image = {
     backgroundImage: `url(${bg})`,
@@ -43,19 +43,19 @@ const App = () => {
                     </Row>
                 </Container>
             </div>
-            <Container className="py-5">
-                <Row  className="py-5">
+            <Container className="pt-5">
+                <Row  className="pt-5">
                     <Col className="px-lg-5">
-                        <Image src={image2} fluid />
+                        <Image className="h-75" src={image1} fluid />
                     </Col>
                     <Col className="px-lg-5">
                         <h1 className="text-start display-5 fw-bolder">Qui sommes nous ?</h1>
-                        <p className="py-3 text-start"> Nous sommes une association sportive de capoeira faisant partie du groupe de capoeira Sul Da Bahia. Nous donnons des cours de capoeira à Suresnes, nous organisons aussi des stages et des voyages ainsi que la création d'une troupe de spectacles. </p>
+                        <p className="py-3 text-start"> Créée en 2012, L’association Nossa C.A.S.A. vise à développer la capoeira à Suresnes et plus largement dans tous les Hauts de Seine. Nous faisons partie de l’école Capoeira Sul da Bahia, présent mondialement dans 18 pays. En plus des cours nous organisons des stages, évènements, voyages, spectacles, etc.</p>
                         <CAT></CAT>
                     </Col>
                 </Row>
             </Container>
-            <Parallax bgImage={image4} strength={750}>
+            <Parallax bgImage={image2} strength={750}>
                 <Container className="py-5">
                     <Row className="py-5">
                         <Col>

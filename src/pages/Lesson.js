@@ -1,9 +1,10 @@
 // * import lib
 import React from "react";
-import {Col, Container, Row, Table, Carousel, Card} from "react-bootstrap";
+import {Col, Container, Row, Carousel} from "react-bootstrap";
 import FullCalendar from "@fullcalendar/react";
 import daygridPlugin from "@fullcalendar/daygrid";
 import frLocale from '@fullcalendar/core/locales/fr';
+import iCalendarPlugin from '@fullcalendar/icalendar';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 
 // * import component
@@ -62,7 +63,6 @@ const halls = [
     }
 ]
 
-
 const Lesson = () => {
     return (
         <div className="App">
@@ -91,6 +91,9 @@ const Lesson = () => {
                 <Container>
                     <Col>
                         <Row>
+                            <h1 className="pb-5">Planning des cours et des événements</h1>
+                        </Row>
+                        <Row>
                             <FullCalendar
                                 height="auto"
                                 //contentHeight="auto"
@@ -101,119 +104,13 @@ const Lesson = () => {
                                     end: "next"
                                 }}
                                 titleFormat={{ year: 'numeric', month: 'long' }}
-                                locale='fr'
+                                locale={'fr'}
                                 locales={[frLocale]}
                                 themeSystem="bootstrap5"
-                                plugins={[daygridPlugin, bootstrap5Plugin]}
-                                events={[
-                                    { title: 'event 1', date: '2023-09-04' },
-                                    { title: 'event 2', date: '2023-09-09' },
-                                    {
-                                        title: "My repeating event",
-                                        start: '10:00', // a start time (10am in this example)
-                                        end: '14:00', // an end time (2pm in this example)
-                                        dow: [1, 4] // Repeat monday and thursday
-                                    }
-                                ]}
+                                plugins={[daygridPlugin, iCalendarPlugin, bootstrap5Plugin]}
+                                events={{ url: 'https://calendar.google.com/calendar/ical/f91828ecfe96d0d4fd3c958b83d23763efbe4a9dad52cba2d8e6e3c9773e847b%40group.calendar.google.com/private-943925c297b0ac103529dd018dd4158c/basic.ics', format: 'ics'}}
                             />
-                        </Row>
-                    </Col>
-                </Container>
-                <Container  className="py-5">
-                    <Col>
-                        <Row className="py-5">
-                            <h1>Planning des cours de la semaine</h1>
-                        </Row>
-                        <Row>
-                            <Table striped bordered hover size="sm">
-                                <thead>
-                                <tr>
-                                    <th>Horaires</th>
-                                    <th>Lundi</th>
-                                    <th>Mardi</th>
-                                    <th>Mercredi</th>
-                                    <th>Jeudi</th>
-                                    <th>Vendredi</th>
-                                    <th>Samedi</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>12H00 - 13H00</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>
-                                        <p>Cours de capoeira baby - Centre sportif des raguidelles</p>
-                                        <p className="fst-italic">5-7 ans<br/>Prof. Sorriso</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13H00 - 14H30</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>
-                                        <p>Cours de capoeira enfant - Centre sportif des raguidelles</p>
-                                        <p className="fst-italic">7-12 ans<br/>Prof. Sorriso</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>14H30 - 16H00</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <tr>
-                                        <td>
-                                            <p>Cours de capoeira ado - Centre sportif des raguidelles</p>
-                                            <p className="fst-italic">12ans et + <br/>Moniteur Brutal</p>
-                                        </td>
-                                        <td>
-                                            <p>Cours de capoeira tout âge - Centre sportif des raguidelles (13H-)</p>
-                                            <p className="fst-italic">4 ans et + <br/>Prof. Sorriso</p>
-                                        </td>
-                                    </tr>
-                                </tr>
-                                <tr>
-                                    <td>19H00 - 20H00</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>
-                                        <p>Cours de capoeira tout âge - Cogedim Club</p>
-                                        <p className="fst-italic">Prof. Sorriso</p>
-                                    </td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>20H30 - 22H30</td>
-                                    <td>
-                                        <p>Cours de capoeira adulte - Gymnase du Belvédère</p>
-                                        <p className="fst-italic">Prof. Pézão</p></td>
-                                    <td>-</td>
-                                    <td>
-                                        <p>Cours d'acrobatie - Centre sportif Arnaud Beltrame</p>
-                                        <p className="fst-italic">Prof. Pézão et Sorriso</p>
-                                    </td>
-                                    <td>
-                                        <p>Cours de capoeira adulte - Gymnase du Belvédère</p>
-                                        <p className="fst-italic">Prof. Sorriso</p>
-                                    </td>
-                                    <td>
-                                        <p>Cours gradé - Espace Gambetta (20H - 22H)</p>
-                                        <p className="fst-italic">(A partir de la 5ème corde)<br/>Prof. Pézão et Sorriso</p>
-                                    </td>
-                                    <td>-</td>
-                                </tr>
-                                </tbody>
-                            </Table>
+                            <div id="calendar"></div>
                         </Row>
                     </Col>
                 </Container>

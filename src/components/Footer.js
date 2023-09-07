@@ -26,7 +26,7 @@ const Footer = () => {
                             />
                             <p>Capoeira Sul Da Bahia - Suresnes</p>
                         </Navbar.Brand>
-                        <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
+                        <p> « A Capoeira é de quem treina » - La capoeira appartient à ceux qui s’entrainent </p>
                     </Col>
                     <Col>
                         <h3 className="my-sm-4">Pages</h3>
@@ -38,13 +38,13 @@ const Footer = () => {
                     <Col>
                         <h3 className="my-sm-4">Contact</h3>
                         <div className="py-1">
-                            <a href="tel:0606060606" className="text-decoration-none text-black"><img src={call} width="20" height="20" /> 0606060606</a>
+                            <a href="tel:0615788058" className="text-decoration-none text-black"><img src={call} width="20" height="20" /> 06 15 78 80 58</a>
                         </div>
                         <div className="py-1">
                             <a href="mailto:nossacasa.asso@gmail.com" className="text-decoration-none text-black"><img alt="mail" src={mail} width="20" height="20" />  nossacasa.asso@gmail.com</a>
                         </div>
                         <div className="py-1">
-                            <img alt="pin" src={pin} width="20" height="20"  /> 6 rue du test, à Test, France
+                            <a href="https://goo.gl/maps/BZSm7o3auTMV8aBw8" target="_blank" className="text-reset text-decoration-none"><img alt="pin" src={pin} width="20" height="20"  /> 65bis, Rue Gambetta 92150 SURESNES</a>
                         </div>
                         <div className="py-3">
                             <a href="https://www.facebook.com/associationnossacasa" target="_blank"><img alt="fb" src={fb} width="30" height="30" /></a>
