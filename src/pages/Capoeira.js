@@ -62,19 +62,19 @@ const Capoeira = () => {
                         <h2 className="display-5 pb-3">Le Brésil Colonial 1500 – 1822</h2>
                         <p>Durant toute la période impériale, les capoeiras, occupent un rôle de plus en plus important dans la vie du pays. Des gangs, appelés maltas de capoeira, se structurent en ville et vont participer à donner une mauvaise image de la capoeira en troublant régulièrement l'odre public (affrontements, dégâts, etc.)</p>
                         <p>La capoeira telle qu'elle est décrite par les voyageurs étrangers est complètement différente de la forme angola, pourtant dite originale, que nous connaissons actuellement.</p>
-                        <Col>
+                        <Col sm={20} md={6}>
                             <p className="fst-italic">« Les Noirs ont encore un autre jeu guerrier, beaucoup plus violent, le Jogar capoeira : deux champions se précipitent l'un sur l'autre, et cherchent à frapper de leur tête la poitrine de l'adversaire qu'ils veulent renverser. C'est par des sauts de côté, ou par des parades également habiles qu'on échappe à l'attaque ; mais en s'élançant l'un contre l'autre, à peu près comme les boucs, ils se heurtent quelquefois fort rudement la tête : aussi voit-on souvent la plaisanterie faire place à la colère, si bien que les coups et même les couteaux ensanglantent le jeu.  »</p>
                             <p> Johann Mauritz Rugendas, peintre-voyageur autrichien, tiré de Voyage pittoresque au Brésil, paru en 1835.</p>
                         </Col>
-                        <Col>
+                        <Col className="d-flex justify-content-center" sm={20} md={6}>
                             <Image src={image2} fluid/>
                         </Col>
                     </Row>
                     <Row className="py-5 text-start fs-5">
-                        <Col>
+                        <Col className="d-flex justify-content-center" sm={20} md={6}>
                             <Image src={image3} fluid/>
                         </Col>
-                        <Col>
+                        <Col sm={20} md={6}>
                             <p className="fst-italic">« Le samedi soir après le dernier travail de la semaine, et les jours de fête qui donnent chômage et repos, les noirs ont une heure ou deux de veillée pour les danses. Ils seréunissent en leur terreiro s'appellent, se groupent, s'agacent et les marches s'ouvrent. Ici c'est la capoeira, espèce de danse Pyrrhique, aux évolutions hardies de combat, que règle le tambour du Congo ; là c'est le Batuque, poses froides ou lascives qu'accélèrent ou contient l'Urucungo viole (autre nom du Berimbau) à cordes maigres ; plus loin c'est une danse folle où le regard, les seins et les hanches provoquent, c'est une espèce de convulsion enivrée qu'on appelle le Lundú. ».</p>
                             <p> Johann Mauritz Rugendas, peintre-voyageur autrichien, tiré de Voyage pittoresque au Brésil, paru en 1835.</p>
                         </Col>
@@ -89,10 +89,10 @@ const Capoeira = () => {
                     </Row>
                     <Row className="py-5 text-start fs-5">
                         <h2 className="display-5 pb-3">Mestre Bimba (1900 - 1974)</h2>
-                        <Col sm={8}>
+                        <Col sm={20} md={8}>
                             <p>Manoel dos Reis Machado nait le 23 novembre 1900 à Salvador de Bahia. Sont surnom "Bimba" qui signifie "zizi" est le résultat d'un pari entre sa mère et la sage-femme, sa mère pensait que ce serait une fille et la sage-femme un garçon. A l'accouchement, la mère demanda qui avait gagné le pari et la sage-femme lui répondit "C'est un bimba, Madame Martinha". Fils de Luis Cândido Machado, champio de Batuque (danse et lutte régionale), il aurait été initié des 1912 à la capoeira par Bentinho un capitaine de la Compagnie de Navigation Bahianaise. Par la suite il donna des cours pendant 10 ans avant de crée en 1932 sa première Académie. A l'époque la capoeira est toujours frappée d'illégalité. La capoeira est interdite dans les lieux publics, en revanche la loi n'interdit pas qu'elle soit pratiquée dans un espace privé. Mestre Bimba sort la capoeira de la rue et la développe dans son Académie et n'est donc pas inquieté par la justice.</p>
                         </Col>
-                        <Col sm={4}>
+                        <Col className="d-flex justify-content-center py-3 py-sm0" sm={20} md={4}>
                             <Image src={bimba} fluid/>
                         </Col>
                         <p>L'apport de Mestre Bimba à la capoeira est énorme. Il lui donne une nouvelle image et contribue à la rendre populaire en faisaint des démonstrations avec ses élèves. Il la révoutionne totalement en créant ce qui deviendra le style appelé "Regional". En effet, Mestre Bimba trouve que la capoeira n'est pas assez efficace. Il décide donc de la mixer avec le Batuque. Il s'inspire également d'autres art martiaux asiatiques,  mais également de  la savate. Des arts martiaux asiatiques il apportera le système des cordes pour marquer la graduation. Il sort la capoeira du sol et la rend aérienne. Il place la ginga comme base de la capoeira et introduit le berimbau comme instrument roi de la capoeira (souvenons nous que son usage n'était pas systématique cf. ci-dessus). Il crée, également, une méthode d'enseignement complète comprenant des techniques appelé sequência (séquence). En modifiant la perception sulfureuse dont souffrait la capoeira il parvient à en faire un sport à part entière et ainsi à toucher toutes les couches de la société.</p>
@@ -100,10 +100,10 @@ const Capoeira = () => {
                     </Row>
                     <Row className="py-5 text-start fs-5">
                         <h2 className="display-5 pb-3">Mestre Pastinha (1889 - 1981)</h2>
-                        <Col sm={4}>
+                        <Col className="d-flex justify-content-center py-3 py-sm0" sm={20} md={4}>
                             <Image src={pastinha} fluid/>
                         </Col>
-                        <Col sm={8}>
+                        <Col sm={20} md={8}>
                             <p>Vincente Ferreira Pastinha nait à Salvador le 5 avril 1889. Il commence la capoeira à l'age de 10 ans avec un noir du nom de benedito, un ancien esclave. En 1935, fort du succès de la première académie de capoeira de Mestre Bimba, Mestre Pastinha ouvre son académie appelée : "Centre sportif de Capoeira Angola". Mestre Pastinha, pense que Mestre Bimba a trop changer la capoeira et qu'il faut la préserver dans son état "originel". Son travail connait à son tour un renommée nationale et internationale. Il est représente le Brésil au 1° festival des arts noirs à Dakar en 1966. Cependant, à la fin de sa vie il connait des problèmes semblables à ceux de Mestre Bimba. En effet, son académie est saisie par "Fondation du Patrimoine" et est transformé en restaurant administratif. Mestre Pastinha décèdera le 13 novembre 1981 à la suite d'un arrêt cardiaque, pauvre, malgré l'apport incroyable qu'il a fourni au Brésil et à la culture afro-brésilienne. </p>
                         </Col>
                     </Row>

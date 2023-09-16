@@ -26,34 +26,32 @@ const Graduation = () => {
         <div className="App">
             <Header></Header>
             <div style={style_image} >
-                <Container className="py-5">
-                    <Container className="py-5">
-                        <Row className="py-5">
-                            <Col className="py-5">
-                                <h1 className="display-1 fw-bolder py-5" style={{color: '#5EC198'}}>Graduation</h1>
-                            </Col>
-                        </Row>
-                    </Container>
+                <Container className="py-0 py-sm-5">
+                    <Row className="py-0 py-sm-5">
+                        <Col>
+                            <h1 className="display-1 fw-bolder py-5" style={{color: '#5EC198'}}>Graduation</h1>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
             <Container className="py-5">
                 <Row className="py-5">
-                    <Col>
+                    <Col sm={20} md={6}>
                         <h1 className="pb-1">Système de graduation adulte</h1>
                         <h3 className="pb-5">Capoeira Sul Da Bahia Mestre Railson</h3>
                         {adult_rope.map((data) => (
                             <div className="p-1">
-                                <img src={data.image} width="400" height="50" />
+                                <img src={data.image} className="img-fluid" alt={data.name}/>
                                 <p>{data.name}</p>
                             </div>
                         ))}
                     </Col>
-                    <Col>
+                    <Col className="pt-5 pt-md-0" sm={20} md={6}>
                         <h1 className="pb-1">Système de graduation enfant</h1>
                         <h3 className="pb-5">Capoeira Sul Da Bahia Mestre Railson</h3>
                         {child_rope.map((data) => (
                             <div className="p-1">
-                                <img src={data.image} width="400" height="50"  />
+                                <img src={data.image} className="img-fluid" alt={data.name}/>
                                 <p>{data.name}</p>
                             </div>
                         ))}

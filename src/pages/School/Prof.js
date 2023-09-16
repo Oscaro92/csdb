@@ -54,7 +54,7 @@ const Prof = () => {
                     <Row className="py-5">
                         <h1> Nos professeurs </h1>
                         {profs.map((data, key) => (
-                            <Col className="py-5">
+                            <Col className="py-5 d-flex justify-content-center">
                                 <Card
                                     key={data.name}
                                     style={{ width: '18rem' }}

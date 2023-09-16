@@ -8,7 +8,7 @@ import logo from '../img/logo.png'
 const Header = () => {
     return (
         <header style={{backgroundColor: '#5EC198'}} className="p-2">
-            <Navbar key="sm" expand="sm">
+            <Navbar expand="md">
                 <Container>
                     <Navbar.Brand href="/">
                         <img
@@ -20,14 +20,19 @@ const Header = () => {
                         />
                         Capoeira Sul Da Bahia
                     </Navbar.Brand>
-                    <Nav.Link href="/">Accueil</Nav.Link>
-                    <Nav.Link href="/cours-events">Cours & Événements</Nav.Link>
-                    <Nav.Link href="/capoeira">Capoeira</Nav.Link>
-                    <NavDropdown title="Notre école" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/notre-ecole/sdb">Sul Da Bahia</NavDropdown.Item>
-                        <NavDropdown.Item href="/notre-ecole/prof">Nos professeurs</NavDropdown.Item>
-                        <NavDropdown.Item href="/notre-ecole/graduation">Graduation</NavDropdown.Item>
-                    </NavDropdown>
+                    <Navbar.Toggle/>
+                    <Navbar.Collapse>
+                        <Nav className="ms-auto">
+                            <Nav.Link className="px-3" href="/">Accueil</Nav.Link>
+                            <Nav.Link className="px-3" href="/cours-events">Cours & Événements</Nav.Link>
+                            <Nav.Link className="px-3" href="/capoeira">Capoeira</Nav.Link>
+                            <NavDropdown className="px-3" title="Notre école" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/notre-ecole/sdb">Sul Da Bahia</NavDropdown.Item>
+                                <NavDropdown.Item href="/notre-ecole/prof">Nos professeurs</NavDropdown.Item>
+                                <NavDropdown.Item href="/notre-ecole/graduation">Graduation</NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>

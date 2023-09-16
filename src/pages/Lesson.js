@@ -2,10 +2,10 @@
 import React from "react";
 import {Col, Container, Row, Carousel} from "react-bootstrap";
 import FullCalendar from "@fullcalendar/react";
-import daygridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from '@fullcalendar/timegrid'
 import frLocale from '@fullcalendar/core/locales/fr';
-import iCalendarPlugin from '@fullcalendar/icalendar';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 // * import component
 import Header from '../components/Header'
@@ -78,12 +78,12 @@ const Lesson = () => {
                 </div>
                 <Container className="py-5">
                     <Row className="py-5">
-                        <Col>
+                        <Col className="pb-5 pb-lg-0" sm={20} md={6}>
                             <h1>Cours adulte et enfant</h1>
                             <p className="py-3">Cours avec Romain et David </p>
                             <CAT></CAT>
                         </Col>
-                        <Col>
+                        <Col sm={20} md={6}>
                             <img src={profs} width="65%"/>
                         </Col>
                     </Row>
@@ -95,9 +95,9 @@ const Lesson = () => {
                         </Row>
                         <Row>
                             <FullCalendar
-                                height="auto"
-                                //contentHeight="auto"
-                                initialView='dayGridWeek'
+                                //height="auto"
+                                contentHeight="auto"
+                                initialView='timeGridWeek'
                                 headerToolbar={{
                                     start: "prev",
                                     center: "title",
@@ -107,8 +107,14 @@ const Lesson = () => {
                                 locale={'fr'}
                                 locales={[frLocale]}
                                 themeSystem="bootstrap5"
-                                plugins={[daygridPlugin, iCalendarPlugin, bootstrap5Plugin]}
-                                events={{ url: 'https://calendar.google.com/calendar/ical/f91828ecfe96d0d4fd3c958b83d23763efbe4a9dad52cba2d8e6e3c9773e847b%40group.calendar.google.com/private-943925c297b0ac103529dd018dd4158c/basic.ics', format: 'ics'}}
+                                plugins={[timeGridPlugin, googleCalendarPlugin, bootstrap5Plugin]}
+                                googleCalendarApiKey='AIzaSyDiEUNIZO4EZl0CHSHsT1QuHSuCfhZKDL0'
+
+                                events={{
+                                    googleCalendarId: 'f91828ecfe96d0d4fd3c958b83d23763efbe4a9dad52cba2d8e6e3c9773e847b@group.calendar.google.com',
+                                    color: 'green',
+                                    textColor: 'black'
+                                }}
                             />
                             <div id="calendar"></div>
                         </Row>
@@ -124,9 +130,9 @@ const Lesson = () => {
                                 {halls.map((hall) => (
                                     <Carousel.Item>
                                         <img
-                                            className="d-block w-100"
+                                            className="img-fluid"
                                             src={hall.image}
-                                            alt="First slide"
+                                            alt={hall.name}
                                         />
                                         <Carousel.Caption>
                                             <h3>{hall.name}</h3>

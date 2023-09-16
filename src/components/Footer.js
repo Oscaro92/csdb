@@ -14,8 +14,8 @@ const Footer = () => {
     return (
         <footer style={{backgroundColor: '#5EC198'}} className="py-4">
             <Container>
-                <Row>
-                    <Col>
+                <Row className="d-flex justify-content-center justify-content-sm-around">
+                    <Col sm={10} md={4}>
                         <Navbar.Brand href="/">
                             <img
                                 alt=""
@@ -28,14 +28,14 @@ const Footer = () => {
                         </Navbar.Brand>
                         <p> « A Capoeira é de quem treina » - La capoeira appartient à ceux qui s’entrainent </p>
                     </Col>
-                    <Col>
+                    <Col className="pt-4 py-sm-0" sm={4} md={4}>
                         <h3 className="my-sm-4">Pages</h3>
                         <Nav.Link href="/" className="pt-1">Accueil</Nav.Link>
                         <Nav.Link href="/cours-events" className="pt-2">Cours & Événements</Nav.Link>
                         <Nav.Link href="/capoeira" className="pt-2">Capoeira</Nav.Link>
                         <Nav.Link href="/notre-ecole/sdb" className="pt-2">Notre école</Nav.Link>
                     </Col>
-                    <Col>
+                    <Col className="pt-4 py-sm-0" sm={4} md={4}>
                         <h3 className="my-sm-4">Contact</h3>
                         <div className="py-1">
                             <a href="tel:0615788058" className="text-decoration-none text-black"><img src={call} width="20" height="20" /> 06 15 78 80 58</a>

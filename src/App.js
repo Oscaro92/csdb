@@ -32,11 +32,11 @@ const App = () => {
         <div className="App">
             <Header></Header>
             <div style={style_image} >
-                <Container className="py-5">
+                <Container className="py-lg-3 py-sm-0">
                     <Row className="py-5">
-                        <Col className="py-5">
+                        <Col className="py-5 m-5 m-sm-0">
                             <h1 className="text-start display-5 fw-bolder" style={{color: '#5EC198'}}>Capoeira Sul Da Bahia Suresnes</h1>
-                            <p className="py-5 text-start fs-5 text-white"> L'association Nossa Cassa a pour but de développer l'activité de la capoeira, en proposant des cours à Suresnes.  </p>
+                            <p className="text-start fs-5 text-white"> L'association Nossa Cassa a pour but de développer l'activité de la capoeira, en proposant des cours à Suresnes.  </p>
                         </Col>
                         <Col>
                         </Col>
@@ -44,11 +44,11 @@ const App = () => {
                 </Container>
             </div>
             <Container className="pt-5">
-                <Row  className="pt-5">
-                    <Col className="px-lg-5">
+                <Row className="pt-5 ">
+                    <Col sm={20} md={6}>
                         <Image className="h-75" src={image1} fluid />
                     </Col>
-                    <Col className="px-lg-5">
+                    <Col className="m-auto m-sm-0 pb-5 pb-lg-0" sm={20} md={6}>
                         <h1 className="text-start display-5 fw-bolder">Qui sommes nous ?</h1>
                         <p className="py-3 text-start"> Créée en 2012, L’association Nossa C.A.S.A. vise à développer la capoeira à Suresnes et plus largement dans tous les Hauts de Seine. Nous faisons partie de l’école Capoeira Sul da Bahia, présent mondialement dans 18 pays. En plus des cours nous organisons des stages, évènements, voyages, spectacles, etc.</p>
                         <CAT></CAT>
@@ -57,7 +57,7 @@ const App = () => {
             </Container>
             <Parallax bgImage={image2} strength={750}>
                 <Container className="py-5">
-                    <Row className="py-5">
+                    <Row className="py-3 py-sm-5">
                         <Col>
                             <h1>2</h1>
                             <p>professeurs</p>
@@ -79,12 +79,12 @@ const App = () => {
             </Parallax>
             <Container className="py-5">
                 <Row className="py-5">
-                    <Col>
+                    <Col className="m-auto m-sm-0 pb-5 pb-md-0" sm={20} md={6}>
                         <h1 className="text-start display-5 fw-bolder">La capoeira</h1>
                         <p className="py-3 text-start">Véritable sport national au brésil, la capoeira est un art martial mélangeant la lutte et la danse, rituel et jeu. Il est pratiqué dans une ronde et accompagné de musique et de chants. </p>
                         <CAT></CAT>
                     </Col>
-                    <Col>
+                    <Col sm={20} md={6}>
                         <Image src={image3} fluid/>
                     </Col>
                 </Row>
