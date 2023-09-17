@@ -12,7 +12,7 @@ import insta from "../img/icons-insta.png";
 
 const Footer = () => {
     return (
-        <footer style={{backgroundColor: '#5EC198'}} className="py-4">
+        <footer style={{backgroundColor: '#00a44f'}} className="py-4">
             <Container>
                 <Row className="d-flex justify-content-center justify-content-sm-around">
                     <Col sm={10} md={4}>

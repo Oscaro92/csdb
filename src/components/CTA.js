@@ -35,7 +35,7 @@ function CAT() {
                     </div>
                 </Modal.Body>
             </Modal>
-            <Button style={{background: '#5EC198', border: "none"}} size="lg" className="btn-overlay" onClick={handleShow}> Nous contacter </Button>
+            <Button style={{background: '#044d24', border: "none"}} size="lg" className="btn-overlay" onClick={handleShow}> Nous contacter </Button>
         </div>
     )
 }

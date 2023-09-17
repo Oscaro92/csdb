@@ -35,7 +35,7 @@ const App = () => {
                 <Container className="py-lg-3 py-sm-0">
                     <Row className="py-5">
                         <Col className="py-5 m-5 m-sm-0">
-                            <h1 className="text-start display-5 fw-bolder" style={{color: '#5EC198'}}>Capoeira Sul Da Bahia Suresnes</h1>
+                            <h1 className="text-start display-5 fw-bolder" style={{color: '#044d24'}}>Capoeira Sul Da Bahia Suresnes</h1>
                             <p className="text-start fs-5 text-white"> L'association Nossa Cassa a pour but de développer l'activité de la capoeira, en proposant des cours à Suresnes.  </p>
                         </Col>
                         <Col>
