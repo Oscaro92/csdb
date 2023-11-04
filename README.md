@@ -1,6 +1,6 @@
 # CSDB - Capoeira Sul Da Bahia
 
-[![Version](https://img.shields.io/badge/version-0.3.1-blue.svg)](https://img.shields.io/badge/version-0.3.1-blue.svg)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 ## Description
 
