@@ -35,11 +35,11 @@ const SDB = () => {
     return (
         <div className="App">
             <Header></Header>
-                <div style={style_image} className="py-5">
-                    <Container className="py-5">
+                <div style={style_image}>
+                    <Container className="py-lg-5 py-sm-0">
                         <Row className="py-5">
-                            <Col className="py-5">
-                                <h1 className="display-1 fw-bolder py-5" style={{color: '#5EC198'}}>Capoeira Sul da Bahia dans le monde</h1>
+                            <Col>
+                                <h1 className="display-1 fw-bolder py-5" style={{color: '#044d24'}}>Capoeira Sul da Bahia dans le monde</h1>
                             </Col>
                         </Row>
                     </Container>

@@ -8,7 +8,7 @@ import Footer from '../../components/Footer'
 
 // * import object
 import {profs} from './function'
-import bg from "../../img/bg_graduation.jpg";
+import bg from "../../img/bg_profs.jpeg";
 
 // * CSS
 const style_image = {
@@ -33,26 +33,23 @@ const Prof = () => {
     return (
         <div className="App">
             <Header></Header>
-                <Modal show={show} onHide={handleClose}>
+                <Modal show={show} onHide={handleClose} centered>
                     <Modal.Header closeButton>
                         <Modal.Title>{profs[keySelect].name}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>{profs[keySelect].description}</Modal.Body>
                 </Modal>
                 <div style={style_image} >
-                    <Container className="py-5">
-                        <Container className="py-5">
-                            <Row className="py-5">
-                                <Col className="py-5">
-                                    <h1 className="display-1 fw-bolder py-5" style={{color: '#5EC198'}}>Graduation</h1>
-                                </Col>
-                            </Row>
-                        </Container>
+                    <Container className="py-lg-5 py-sm-0">
+                        <Row className="py-5">
+                            <Col>
+                                <h1 className="display-1 fw-bolder py-5" style={{color: '#044d24'}}>Nos professeurs</h1>
+                            </Col>
+                        </Row>
                     </Container>
                 </div>
                 <Container className="py-5">
                     <Row className="py-5">
-                        <h1> Nos professeurs </h1>
                         {profs.map((data, key) => (
                             <Col className="py-5 d-flex justify-content-center">
                                 <Card
@@ -64,7 +61,7 @@ const Prof = () => {
                                     <Card.Body>
                                         <Card.Title>{data.name}</Card.Title>
                                         <Card.Img src={data.corde} className="py-3"/>
-                                        <Button onClick={() => {handleShow(key)}}>Description</Button>
+                                        <Button style={{background: "#044d24", border: "#044d24"}} onClick={() => {handleShow(key)}}>Description</Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
