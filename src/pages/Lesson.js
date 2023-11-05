@@ -1,6 +1,6 @@
 // * import lib
 import React from "react";
-import {Col, Container, Row, Carousel} from "react-bootstrap";
+import {Col, Container, Row, Carousel, Image} from "react-bootstrap";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
@@ -83,7 +83,7 @@ const Lesson = () => {
             <Container className="py-lg-5 py-sm-0">
                 <Row className="py-5">
                     <Col className="pb-5 pb-lg-0" sm={20} md={6}>
-                        <img src={profs} width="65%"/>
+                        <Image className="rounded" src={profs} width="60%" fluid/>
                     </Col>
                     <Col  sm={20} md={6}>
                         <h1 className="display-5 fw-bolder">Cours adulte et enfant</h1>
@@ -123,7 +123,7 @@ const Lesson = () => {
                         <CAT></CAT>
                     </Col>
                     <Col sm={20} md={6}>
-                        <img src={events} width="75%"/>
+                        <Image className="rounded" src={events} width="75%"/>
                     </Col>
                 </Row>
             </Container>

@@ -14,6 +14,7 @@ import Lesson from './pages/Lesson'
 import Graduation from './pages/School/Graduation'
 import Prof from './pages/School/Prof'
 import SDB from './pages/School/SDB'
+import Error from './pages/404'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
             <Route path="/notre-ecole/graduation" element={<Graduation/>} />
             <Route path="/notre-ecole/prof" element={<Prof/>} />
             <Route path="/notre-ecole/sdb" element={<SDB/>} />
+            <Route path='*' element={<Error/>} />
         </Routes>
     </Router>
   </React.StrictMode>

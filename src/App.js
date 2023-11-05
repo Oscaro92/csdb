@@ -26,7 +26,6 @@ const style_image = {
     "background-size": "cover"
 }
 
-//
 const App = () => {
     return (
         <div className="App">
@@ -46,7 +45,7 @@ const App = () => {
             <Container className="pt-5">
                 <Row className="pt-5 ">
                     <Col sm={20} md={6}>
-                        <Image className="h-75" src={image1} fluid />
+                        <Image className="h-75 rounded" src={image1} fluid />
                     </Col>
                     <Col className="m-auto m-sm-0 pb-5 pb-lg-0" sm={20} md={6}>
                         <h1 className="display-5 fw-bolder">Qui sommes nous ?</h1>
@@ -85,7 +84,7 @@ const App = () => {
                         <CAT></CAT>
                     </Col>
                     <Col sm={20} md={6}>
-                        <Image src={image3} fluid/>
+                        <Image className="rounded" src={image3} fluid/>
                     </Col>
                 </Row>
             </Container>

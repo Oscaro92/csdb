@@ -1,10 +1,10 @@
 // * import lib
 import React from "react";
+import {Col, Container, Row, Image} from "react-bootstrap";
 
 // * import component
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import {Col, Container, Row} from "react-bootstrap";
 
 // * import obj
 import {child_rope, adult_rope} from './function'
@@ -41,7 +41,7 @@ const Graduation = () => {
                         <h3 className="pb-5">Capoeira Sul Da Bahia Mestre Railson</h3>
                         {adult_rope.map((data) => (
                             <div className="p-1">
-                                <img src={data.image} className="img-fluid" alt={data.name}/>
+                                <Image src={data.image} alt={data.name} fluid/>
                                 <p>{data.name}</p>
                             </div>
                         ))}
@@ -51,7 +51,7 @@ const Graduation = () => {
                         <h3 className="pb-5">Capoeira Sul Da Bahia Mestre Railson</h3>
                         {child_rope.map((data) => (
                             <div className="p-1">
-                                <img src={data.image} className="img-fluid" alt={data.name}/>
+                                <Image src={data.image} alt={data.name} fluid/>
                                 <p>{data.name}</p>
                             </div>
                         ))}
