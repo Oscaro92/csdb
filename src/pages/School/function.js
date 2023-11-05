@@ -206,45 +206,37 @@ const adult_rope = [
 ]
 
 
-const markers_sa = [
-    { markerOffset: -30, name: "Arrail d'Ajuda & Porto Seguro", coordinates: [-39.0929, -16.48705]},
-    { markerOffset: 15, name: "São Paulo", coordinates: [-46.9249, -23.681] },
-    { markerOffset: 15, name: "Minas Gerais", coordinates: [-48.09325, -15.7215] },
-    { markerOffset: 15, name: "Santiago", coordinates: [-70.9416, -33.4721] },
-    { markerOffset: -30, name: "Valparaíso & Vina del Mar", coordinates: [-71.5906, -33.0452] },
-    { markerOffset: 15, name: "Temuco", coordinates: [-72.6439, -38.7290] },
-    { markerOffset: -35, name: "Lima", coordinates: [-77.1525, -12.0262] },
-    { markerOffset: -30, name: "Cusco", coordinates: [-71.9804, -13.5299] },
-    { markerOffset: 15, name: "Arequipa", coordinates: [-71.5596, -16.4040] },
-    { markerOffset: -30, name: "Puno", coordinates: [-70.0575, -15.8467] }
-];
-
-const markers_na = [
-    { markerOffset: 15, name: "Santa Barbara", coordinates: [-119.7910, 34.3986] },
-    { markerOffset: -30, name: "San Francisco", coordinates: [-122.4787, 37.7577] },
-    { markerOffset: 15, name: "Washington", coordinates: [-77.0969, 38.8938] },
-    { markerOffset: 15, name: "Québec", coordinates: [-71.5097, 46.8572] }
-];
-
-const markers_europe = [
-    { markerOffset: 10, name: "Paris", coordinates: [2.2646, 48.8589] },
-    { markerOffset: 5, name: "Boulogne s/ Mer", coordinates: [1.5855, 50.7303] },
-    { markerOffset: -25, name: "Vienne", coordinates: [16.0682, 48.2204] },
-    { markerOffset: 15, name: "San Miniato", coordinates: [10.8434, 43.6831] },
-    { markerOffset: 10, name: "Milan", coordinates: [9.0953, 45.4628] },
-    { markerOffset: -25, name: "Bolzano", coordinates: [11.3265, 46.4892] },
-    { markerOffset: -25, name: "Amsterdam", coordinates: [4.8215, 52.3547] },
-    { markerOffset: -25, name: "Lille", coordinates: [3.0056, 50.6311] },
-    { markerOffset: 10, name: "Braga", coordinates: [-8.4526, 41.5473] },
-    { markerOffset: 5, name: "Londres", coordinates: [-0.2664, 51.5287] },
-    { markerOffset: 10, name: "Seville", coordinates: [-5.9962, 37.3754] }
+const markers = [
+    {name: "Arrail d'Ajuda & Porto Seguro", coordinates: [-16.48705, -39.0929], profs: [{name: "Mestre Railson", corde: adult16}, {name: "Test", corde: adult11}]},
+    {name: "São Paulo", coordinates: [-23.681, -46.9249], profs: [] },
+    {name: "Minas Gerais", coordinates: [-15.7215, -48.09325], profs: [] },
+    {name: "Santiago", coordinates: [-33.4721, -70.9416], profs: [] },
+    {name: "Valparaíso & Vina del Mar", coordinates: [-33.0452, -71.5906], profs: [] },
+    {name: "Temuco", coordinates: [-38.7290, -72.6439], profs: [] },
+    {name: "Lima", coordinates: [-12.0262, -77.1525], profs: [] },
+    {name: "Cusco", coordinates: [-13.5299, -71.9804], profs: [] },
+    {name: "Arequipa", coordinates: [-16.4040, -71.5596], profs: [] },
+    {name: "Puno", coordinates: [-15.8467, -70.0575], profs: [] },
+    {name: "Santa Barbara", coordinates: [34.3986, -119.7910], profs: [] },
+    {name: "San Francisco", coordinates: [37.7577, -122.4787], profs: [] },
+    {name: "Washington", coordinates: [38.8938, -77.0969], profs: [] },
+    {name: "Québec", coordinates: [46.8572, -71.5097], profs: [] },
+    {name: "Paris", coordinates: [48.8589, 2.2646], profs: [] },
+    {name: "Boulogne s/ Mer", coordinates: [50.7303, 1.5855], profs: [] },
+    {name: "Vienne", coordinates: [48.2204, 16.0682], profs: [] },
+    {name: "San Miniato", coordinates: [43.6831, 10.8434], profs: [] },
+    {name: "Milan", coordinates: [45.4628, 9.0953], profs: [] },
+    {name: "Bolzano", coordinates: [46.4892, 11.3265], profs: [] },
+    {name: "Amsterdam", coordinates: [52.3547, 4.8215], profs: [] },
+    {name: "Lille", coordinates: [50.6311, 3.0056], profs: [] },
+    {name: "Braga", coordinates: [41.5473, -8.4526], profs: [] },
+    {name: "Londres", coordinates: [51.5287, -0.2664], profs: [] },
+    {name: "Seville", coordinates: [37.3754, -5.9962], profs: [] }
 ];
 
 export {
     profs,
     child_rope,
     adult_rope,
-    markers_sa,
-    markers_na,
-    markers_europe
+    markers
 }
