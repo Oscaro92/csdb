@@ -7,8 +7,7 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import frLocale from '@fullcalendar/core/locales/fr';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 // * import component
 import Header from '../components/Header'
@@ -75,7 +74,7 @@ const Lesson = () => {
                 <Container className="py-lg-5 py-sm-0">
                     <Row className="py-5">
                         <Col>
-                            <h1 className="display-1 fw-bolder" style={{color: '#044d24'}}>Cours & Événements</h1>
+                            <h1 className="display-1 fw-bolder text-primary">Cours & Événements</h1>
                         </Col>
                     </Row>
                 </Container>

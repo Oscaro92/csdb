@@ -2,7 +2,7 @@
 import { Button, Modal } from 'react-bootstrap'
 import React, {useState} from "react";
 
-function CAT() {
+function CTA() {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -30,9 +30,9 @@ function CAT() {
                     </div>
                 </Modal.Body>
             </Modal>
-            <Button style={{background: '#044d24', border: "none"}} size="lg" className="btn-overlay" onClick={handleShow}> Nous contacter </Button>
+            <Button style={{border: "none"}} size="lg" className="btn btn-overlay btn-primary" onClick={handleShow}> Nous contacter </Button>
         </div>
     )
 }
 
-export default CAT
+export default CTA

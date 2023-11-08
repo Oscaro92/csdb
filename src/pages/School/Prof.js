@@ -37,13 +37,15 @@ const Prof = () => {
                     <Modal.Header closeButton>
                         <Modal.Title>{profs[keySelect].name}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>{profs[keySelect].description}</Modal.Body>
+                    <Modal.Body>
+                        <span className="text-wrap">{profs[keySelect].description}</span>
+                    </Modal.Body>
                 </Modal>
                 <div style={style_image} >
                     <Container className="py-lg-5 py-sm-0">
                         <Row className="py-5">
                             <Col>
-                                <h1 className="display-1 fw-bolder py-5" style={{color: '#044d24'}}>Nos professeurs</h1>
+                                <h1 className="display-1 fw-bolder py-5 text-primary">Nos professeurs</h1>
                             </Col>
                         </Row>
                     </Container>

@@ -2,9 +2,6 @@
 import React from "react";
 import {Container, Row, Col, Image} from 'react-bootstrap'
 
-// * import css
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 // * import components
 import Header from '../components/Header'
 import Footer from '../components/Footer'

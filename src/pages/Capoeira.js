@@ -31,7 +31,7 @@ const Capoeira = () => {
                     <Container className="py-lg-5 py-sm-0">
                         <Row className="py-5">
                             <Col>
-                                <h1 className="py-5 display-1 fw-bolder" style={{color: '#044d24'}}>La capoeira</h1>
+                                <h1 className="py-5 display-1 fw-bolder text-primary">La capoeira</h1>
                             </Col>
                         </Row>
                     </Container>

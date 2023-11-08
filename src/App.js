@@ -4,8 +4,9 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 import {Parallax} from 'react-parallax'
 
 // * import css
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import './custom.scss';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // * import components
 import Header from './components/Header'
@@ -34,7 +35,7 @@ const App = () => {
                 <Container className="py-lg-5 py-sm-0">
                     <Row className="py-5">
                         <Col sm={20} md={6}>
-                            <h1 className="text-start display-5 fw-bolder" style={{color: '#044d24'}}>Capoeira Sul Da Bahia Suresnes</h1>
+                            <h1 className="text-start display-5 fw-bolder text-primary" >Capoeira Sul Da Bahia Suresnes</h1>
                             <p className="text-start fs-5 text-white"> L'association Nossa Cassa a pour but de développer l'activité de la capoeira, en proposant des cours à Suresnes.  </p>
                         </Col>
                         <Col sm={0} md={6}>
@@ -43,7 +44,7 @@ const App = () => {
                 </Container>
             </div>
             <Container className="pt-5">
-                <Row className="pt-5 ">
+                <Row className="pt-5">
                     <Col sm={20} md={6}>
                         <Image className="h-75 rounded" src={image1} fluid />
                     </Col>
@@ -56,7 +57,7 @@ const App = () => {
             </Container>
             <Parallax bgImage={image2} strength={750}>
                 <Container className="py-5">
-                    <Row className="py-3 py-sm-5 fw-bolder" style={{color: "#044d24"}} >
+                    <Row className="py-3 py-sm-5 fw-bolder text-primary" >
                         <Col>
                             <h1>4</h1>
                             <p>professeurs</p>

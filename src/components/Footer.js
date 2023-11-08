@@ -1,14 +1,13 @@
 // * import lib
 import React from 'react'
 import {Container, Row, Col, Nav, Navbar} from 'react-bootstrap'
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // * import image
 import logo from "../img/logo.png";
 
 const Footer = () => {
     return (
-        <footer style={{backgroundColor: '#044d24'}} className="py-4">
+        <footer className="py-4 bg-primary">
             <Container>
                 <Row className="d-flex justify-content-center justify-content-sm-around">
                     <Col sm={10} md={4}>
