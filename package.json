@@ -1,6 +1,6 @@
 {
   "name": "csdb",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "dependencies": {
     "@fullcalendar/bootstrap5": "^6.1.8",

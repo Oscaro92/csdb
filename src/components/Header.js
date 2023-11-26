@@ -19,7 +19,7 @@ const Header = () => {
                         />
                         <Navbar.Text className="text-white" href="/">Capoeira Sul Da Bahia</Navbar.Text>
                     </Navbar.Brand>
-                    <Navbar.Toggle/>
+                    <Navbar.Toggle className="border-white" aria-controls="basic-navbar-nav"> <i className="bi bi-list"></i> </Navbar.Toggle>
                     <Navbar.Collapse>
                         <Nav className="ms-auto ">
                             <Nav.Link className="px-3 text-white" href="/">Accueil</Nav.Link>

@@ -5,3 +5,8 @@
 .dropdown>a::after {
   color: white;
 }
+
+.navbar-light .navbar-toggler{
+  color: white;
+}
+
