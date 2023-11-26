@@ -70,9 +70,15 @@ let profs = [
         corde: adult11
     },
     {
-        name: 'Cynthia',
+        name: 'Irmãzinha',
         picture: img_cynthia,
-        description: "Cynthia capoeiriste depuis plus de X années",
+        description: "Grande passionnée de danses du monde, en couple, en solo, je commence la capoeira par hasard, en 2008 dans une association afro-caraïbéenne de Sannois (95), où je rencontre mon premier professeur Mumia Preta (Johann).\n" +
+            "Après quelques mois de pratique de capoeira, est venu le moment de mon batizado dans le 94, je suis alors séduite par l'énergie dégagée, l'ambiance conviviale, les rencontres ...\n" +
+            "L'année suivante, je commence à pratiquer à Suresnes où je m’entraîne avec ceux que je n'avais vu qu'en démonstration ou en roda :  Edwige, Sorriso , Pézão...\n" +
+            "Je pars  au Brésil participer au mondial de Capoeira en 2009 et 2015.\n" +
+            "Entre 2015 et 2016 je donne des cours adultes le jeudi soir, sous la supervision de Sorriso.\n" +
+            "Je reste active dans l’association jusqu'à ma deuxième grossesse après quoi je prends du temps pour mes autres projets personnels tout en restant présente aux événements marquants de l'association pour garder le lien, en attendant de pouvoir reprendre vraiment ma passion. \n" +
+            "Je reprends l'enseignement de la capoeira petit à petit, en local dans ma commune d’Ermont, auprès des enfants à l'école et bientôt au centre de loisirs. ",
         corde: adult9
     },
     {
